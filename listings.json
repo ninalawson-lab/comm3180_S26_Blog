@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/001_DOW1_Weather/DOW1.html",
       "/posts/002_post_title/blogpost.html",
       "/posts/000_test_post/index.html"
     ]

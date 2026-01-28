@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/about.html</loc>
-    <lastmod>2026-01-26T23:33:21.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2026-01-26T23:33:21.875Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/index.html</loc>
-    <lastmod>2026-01-26T23:33:21.874Z</lastmod>
+    <lastmod>2026-01-28T15:36:14.150Z</lastmod>
   </url>
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_post_title/blogpost.html</loc>
-    <lastmod>2026-01-26T23:33:21.875Z</lastmod>
+    <lastmod>2026-01-28T15:36:14.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/index.html</loc>
+    <lastmod>2026-01-28T15:36:14.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2026-01-28T15:36:14.150Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/001_DOW1_Weather/DOW1.html</loc>
+    <lastmod>2026-01-28T15:36:14.150Z</lastmod>
   </url>
 </urlset>
