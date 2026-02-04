@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "My Data Stories",
     "section": "",
-    "text": "Dataset of the Week #1: The Weather in Philadelphia\n\n\n\nDOW\n\nweather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nNina\n\n\n\n\n\n\n\n\n\n\n\n\nNina’s Test\n\n\n\nLLMs\n\nLearning\n\n\n\nTesting Blogging\n\n\n\n\n\nJan 24, 2026\n\n\nNina\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+    "text": "Dataset of the Week #1: The Weather in Philadelphia\n\n\n\nDOW\n\nweather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nNina Lawson\n\n\n\n\n\n\n\n\n\n\n\n\nNina’s Test\n\n\n\nLLMs\n\nLearning\n\n\n\nTesting Blogging\n\n\n\n\n\nJan 24, 2026\n\n\nNina\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/000_test_post/index.html",
@@ -39,6 +39,6 @@
     "href": "posts/001_DOW1_Weather/DOW1.html",
     "title": "Dataset of the Week #1: The Weather in Philadelphia",
     "section": "",
-    "text": "My post\n\nprint('This is some code')\n\nThis is some code"
+    "text": "My post\n\nimport pandas as pd\n\n\nweather_df = pd.read_csv('data/philadelphia_weather_2005_to_2025.csv')\n\n\nweather_df.head()\n\n\n\n\n\n\n\n\nday\nyear\nhigh\nlow\nrain\nsnow\ndate\nday_num\nmonth_num\ndow\ndow_name\nmonth\n\n\n\n\n0\nJanuary 1\n2005\n64\n39\n0.00\n0.0\n2005-01-01\n1\n1\n5\nSaturday\nJanuary\n\n\n1\nJanuary 2\n2005\n47\n33\n0.01\n0.0\n2005-01-02\n2\n1\n6\nSunday\nJanuary\n\n\n2\nJanuary 3\n2005\n57\n40\n0.06\n0.0\n2005-01-03\n3\n1\n0\nMonday\nJanuary\n\n\n3\nJanuary 4\n2005\n55\n44\n0.00\n0.0\n2005-01-04\n4\n1\n1\nTuesday\nJanuary\n\n\n4\nJanuary 5\n2005\n47\n36\n0.62\n0.0\n2005-01-05\n5\n1\n2\nWednesday\nJanuary"
   }
 ]

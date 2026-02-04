@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nina">
+<meta name="author" content="Nina Lawson">
 <meta name="dcterms.date" content="2026-01-28">
 
 <title>Dataset of the Week #1: The Weather in Philadelphia – Nina’s Blog</title>
@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -105,6 +105,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -161,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Nina </p>
+               <p>Nina Lawson </p>
             </div>
     </div>
       
@@ -189,10 +192,116 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="my-post" class="level3">
 <h3 class="anchored" data-anchor-id="my-post">My post</h3>
-<div id="9ad95f7e-b115-47ba-a4c3-ebfbb6ad9612" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'This is some code'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>This is some code</code></pre>
+<div id="9ad95f7e-b115-47ba-a4c3-ebfbb6ad9612" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="f1835a79-6678-4465-b356-89f9513df0f4" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> pd.read_csv(<span class="st">'data/philadelphia_weather_2005_to_2025.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="27f6a21d-a1c0-4bfd-bed2-e0ca37a5b103" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weather_df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">day</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">high</th>
+<th data-quarto-table-cell-role="th">low</th>
+<th data-quarto-table-cell-role="th">rain</th>
+<th data-quarto-table-cell-role="th">snow</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">day_num</th>
+<th data-quarto-table-cell-role="th">month_num</th>
+<th data-quarto-table-cell-role="th">dow</th>
+<th data-quarto-table-cell-role="th">dow_name</th>
+<th data-quarto-table-cell-role="th">month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>January 1</td>
+<td>2005</td>
+<td>64</td>
+<td>39</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2005-01-01</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>January 2</td>
+<td>2005</td>
+<td>47</td>
+<td>33</td>
+<td>0.01</td>
+<td>0.0</td>
+<td>2005-01-02</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>January 3</td>
+<td>2005</td>
+<td>57</td>
+<td>40</td>
+<td>0.06</td>
+<td>0.0</td>
+<td>2005-01-03</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>January 4</td>
+<td>2005</td>
+<td>55</td>
+<td>44</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2005-01-04</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>January 5</td>
+<td>2005</td>
+<td>47</td>
+<td>36</td>
+<td>0.62</td>
+<td>0.0</td>
+<td>2005-01-05</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+</tr>
+</tbody>
+</table>
+
+</div>
 </div>
 </div>
 
