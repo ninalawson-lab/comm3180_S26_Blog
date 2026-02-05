@@ -22,45 +22,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -105,9 +70,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -190,122 +152,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="my-post" class="level3">
-<h3 class="anchored" data-anchor-id="my-post">My post</h3>
-<div id="9ad95f7e-b115-47ba-a4c3-ebfbb6ad9612" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div id="f1835a79-6678-4465-b356-89f9513df0f4" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> pd.read_csv(<span class="st">'data/philadelphia_weather_2005_to_2025.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div id="27f6a21d-a1c0-4bfd-bed2-e0ca37a5b103" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weather_df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div>
+<section id="my-post" class="level2">
+<h2 class="anchored" data-anchor-id="my-post">My Post</h2>
+<section id="i-began-by-examining-the-weather-on-november-23rd-my-birthday-in-philadelphia-over-time-to-see-whether-there-were-any-noticeable-long-term-patterns" class="level4">
+<h4 class="anchored" data-anchor-id="i-began-by-examining-the-weather-on-november-23rd-my-birthday-in-philadelphia-over-time-to-see-whether-there-were-any-noticeable-long-term-patterns">I began by examining the weather on November 23rd (my birthday) in Philadelphia over time to see whether there were any noticeable long-term patterns</h4>
+</section>
+<section id="november-23-temperatures-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="november-23-temperatures-over-time">November 23 Temperatures Over Time</h3>
+<section id="i-first-graphed-the-high-temperatures-on-november-23rd-from-2005-to-2025.-the-data-shows-substantial-year-to-year-variability.-some-years-such-as-2010-and-2011-were-unusually-warm-while-others-were-noticeably-cooler" class="level4">
+<h4 class="anchored" data-anchor-id="i-first-graphed-the-high-temperatures-on-november-23rd-from-2005-to-2025.-the-data-shows-substantial-year-to-year-variability.-some-years-such-as-2010-and-2011-were-unusually-warm-while-others-were-noticeably-cooler">I first graphed the high temperatures on November 23rd from 2005 to 2025. The data shows substantial year-to-year variability. Some years, such as 2010 and 2011, were unusually warm, while others were noticeably cooler</h4>
+<p><img src="data/high_23.png" class="img-fluid"></p>
+</section>
+<section id="i-then-graphed-the-low-temperatures-for-the-same-date-and-years.-similar-to-the-highs-the-lows-fluctuate-significantly-across-time-rather-than-following-a-smooth-trend" class="level4">
+<h4 class="anchored" data-anchor-id="i-then-graphed-the-low-temperatures-for-the-same-date-and-years.-similar-to-the-highs-the-lows-fluctuate-significantly-across-time-rather-than-following-a-smooth-trend">I then graphed the low temperatures for the same date and years. Similar to the highs, the lows fluctuate significantly across time rather than following a smooth trend</h4>
+<p><img src="data/low_23.png" class="img-fluid"></p>
+</section>
+<section id="one-pattern-that-stood-out-was-a-sharp-dip-between-2015-and-2020-particularly-in-2018-where-both-the-high-and-low-temperatures-were-unusually-low-compared-to-surrounding-years.-to-investigate-further-i-returned-to-the-dataset-and-confirmed-that-november-23-2018-recorded-a-high-of-33f-and-a-low-of-16f-making-it-a-clear-outlier-relative-to-the-rest-of-the-sample" class="level4">
+<h4 class="anchored" data-anchor-id="one-pattern-that-stood-out-was-a-sharp-dip-between-2015-and-2020-particularly-in-2018-where-both-the-high-and-low-temperatures-were-unusually-low-compared-to-surrounding-years.-to-investigate-further-i-returned-to-the-dataset-and-confirmed-that-november-23-2018-recorded-a-high-of-33f-and-a-low-of-16f-making-it-a-clear-outlier-relative-to-the-rest-of-the-sample">One pattern that stood out was a sharp dip between 2015 and 2020, particularly in 2018, where both the high and low temperatures were unusually low compared to surrounding years. To investigate further, I returned to the dataset and confirmed that November 23, 2018 recorded a high of 33°F and a low of 16°F, making it a clear outlier relative to the rest of the sample</h4>
+<p><img src="data/dip.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="was-november-2018-unusually-cold-overall" class="level2">
+<h2 class="anchored" data-anchor-id="was-november-2018-unusually-cold-overall">Was November 2018 Unusually Cold Overall?</h2>
+<section id="to-determine-whether-this-dip-reflected-a-broader-cold-period-rather-than-an-anomaly-i-examined-average-high-and-low-temperatures-across-all-days-in-november-2018" class="level4">
+<h4 class="anchored" data-anchor-id="to-determine-whether-this-dip-reflected-a-broader-cold-period-rather-than-an-anomaly-i-examined-average-high-and-low-temperatures-across-all-days-in-november-2018">To determine whether this dip reflected a broader cold period rather than an anomaly, I examined average high and low temperatures across all days in November 2018</h4>
+<p><img src="data/avghigh_low.png" class="img-fluid"></p>
+</section>
+<section id="the-results-showed-average-temperatures-of-approximately-50f-high-and-36f-low.-this-shows-that-november-23rd-2018-was-significantly-colder-than-the-rest-of-the-month-and-it-was-an-isolated-weather-event-rather-than-evidence-of-a-colder-november-overall" class="level4">
+<h4 class="anchored" data-anchor-id="the-results-showed-average-temperatures-of-approximately-50f-high-and-36f-low.-this-shows-that-november-23rd-2018-was-significantly-colder-than-the-rest-of-the-month-and-it-was-an-isolated-weather-event-rather-than-evidence-of-a-colder-november-overall">The results showed average temperatures of approximately 50°F (high) and 36°F (low). This shows that November 23rd, 2018 was significantly colder than the rest of the month, and it was an isolated weather event rather than evidence of a colder November overall</h4>
+</section>
+<section id="next-i-looked-for-broader-patterns-by-grouping-november-23rd-temperatures-into-five-year-periods-20052010-20102015-20152020-and-20202025-to-see-if-there-was-an-upward-trend-in-temperatures" class="level4">
+<h4 class="anchored" data-anchor-id="next-i-looked-for-broader-patterns-by-grouping-november-23rd-temperatures-into-five-year-periods-20052010-20102015-20152020-and-20202025-to-see-if-there-was-an-upward-trend-in-temperatures">Next, I looked for broader patterns by grouping November 23rd temperatures into five-year periods (2005–2010, 2010–2015, 2015–2020, and 2020–2025) to see if there was an upward trend in temperatures</h4>
+<p><img src="data/avghigh_buckets.png" class="img-fluid"></p>
+<p><img src="data/avglow_buckets.png" class="img-fluid"></p>
+</section>
+<section id="when-comparing-both-average-highs-and-lows-across-these-buckets-there-was-no-consistent-upward-trend.-instead-the-averages-fluctuate-across-periods" class="level4">
+<h4 class="anchored" data-anchor-id="when-comparing-both-average-highs-and-lows-across-these-buckets-there-was-no-consistent-upward-trend.-instead-the-averages-fluctuate-across-periods">When comparing both average highs and lows across these buckets, there was no consistent upward trend. Instead, the averages fluctuate across periods</h4>
+</section>
+</section>
+<section id="rainfall-and-snowfall-trends" class="level2">
+<h2 class="anchored" data-anchor-id="rainfall-and-snowfall-trends">Rainfall and Snowfall Trends</h2>
+<section id="now-im-interested-to-see-if-average-yearly-rainfall-or-snowfall-has-increased-over-the-years-as-another-indicator-of-potential-climate-change" class="level4">
+<h4 class="anchored" data-anchor-id="now-im-interested-to-see-if-average-yearly-rainfall-or-snowfall-has-increased-over-the-years-as-another-indicator-of-potential-climate-change">Now I’m interested to see if average yearly rainfall or snowfall has increased over the years, as another indicator of potential climate change</h4>
+<p><img src="data/total_rainfall.png" class="img-fluid"></p>
+<p><img src="data/total_snowfall.png" class="img-fluid"></p>
+</section>
+<section id="i-graphed-total-annual-rainfall-and-snowfall-since-2005-and-found-that-both-series-exhibit-considerable-variability-from-year-to-year" class="level4">
+<h4 class="anchored" data-anchor-id="i-graphed-total-annual-rainfall-and-snowfall-since-2005-and-found-that-both-series-exhibit-considerable-variability-from-year-to-year">I graphed total annual rainfall and snowfall since 2005 and found that both series exhibit considerable variability from year to year</h4>
+</section>
+<section id="to-smooth-out-short-term-fluctuations-i-again-grouped-the-data-into-five-year-periods.-these-plots-suggest-a-gradual-decline-in-both-average-rainfall-and-snowfall-over-the-past-two-decades.-the-bucketed-averages-provide-more-consistent-evidence-of-a-downward-trend-than-the-temperature-data-alone" class="level4">
+<h4 class="anchored" data-anchor-id="to-smooth-out-short-term-fluctuations-i-again-grouped-the-data-into-five-year-periods.-these-plots-suggest-a-gradual-decline-in-both-average-rainfall-and-snowfall-over-the-past-two-decades.-the-bucketed-averages-provide-more-consistent-evidence-of-a-downward-trend-than-the-temperature-data-alone">To smooth out short-term fluctuations, I again grouped the data into five-year periods. These plots suggest a gradual decline in both average rainfall and snowfall over the past two decades. The bucketed averages provide more consistent evidence of a downward trend than the temperature data alone</h4>
+<p><img src="data/rainfall_buckets.png" class="img-fluid"></p>
+<p><img src="data/snowfall_buckets.png" class="img-fluid"></p>
+</section>
+<section id="this-graph-provides-more-conclusive-evidence-that-the-average-rainfall-and-snowfall-has-declined-over-the-past-20-years." class="level4">
+<h4 class="anchored" data-anchor-id="this-graph-provides-more-conclusive-evidence-that-the-average-rainfall-and-snowfall-has-declined-over-the-past-20-years.">This graph provides more conclusive evidence that the average rainfall and snowfall has declined over the past 20 years.</h4>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">day</th>
-<th data-quarto-table-cell-role="th">year</th>
-<th data-quarto-table-cell-role="th">high</th>
-<th data-quarto-table-cell-role="th">low</th>
-<th data-quarto-table-cell-role="th">rain</th>
-<th data-quarto-table-cell-role="th">snow</th>
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">day_num</th>
-<th data-quarto-table-cell-role="th">month_num</th>
-<th data-quarto-table-cell-role="th">dow</th>
-<th data-quarto-table-cell-role="th">dow_name</th>
-<th data-quarto-table-cell-role="th">month</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>January 1</td>
-<td>2005</td>
-<td>64</td>
-<td>39</td>
-<td>0.00</td>
-<td>0.0</td>
-<td>2005-01-01</td>
-<td>1</td>
-<td>1</td>
-<td>5</td>
-<td>Saturday</td>
-<td>January</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>January 2</td>
-<td>2005</td>
-<td>47</td>
-<td>33</td>
-<td>0.01</td>
-<td>0.0</td>
-<td>2005-01-02</td>
-<td>2</td>
-<td>1</td>
-<td>6</td>
-<td>Sunday</td>
-<td>January</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>January 3</td>
-<td>2005</td>
-<td>57</td>
-<td>40</td>
-<td>0.06</td>
-<td>0.0</td>
-<td>2005-01-03</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>Monday</td>
-<td>January</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>January 4</td>
-<td>2005</td>
-<td>55</td>
-<td>44</td>
-<td>0.00</td>
-<td>0.0</td>
-<td>2005-01-04</td>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>Tuesday</td>
-<td>January</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>January 5</td>
-<td>2005</td>
-<td>47</td>
-<td>36</td>
-<td>0.62</td>
-<td>0.0</td>
-<td>2005-01-05</td>
-<td>5</td>
-<td>1</td>
-<td>2</td>
-<td>Wednesday</td>
-<td>January</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-
-
+</section>
 </section>
 
 </main> <!-- /main -->

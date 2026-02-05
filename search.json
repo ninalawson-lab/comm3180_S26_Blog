@@ -35,10 +35,17 @@
     "text": "Stories from data\n\nLet’s set up some data\n\n\nx = ['A', 'B', 'C']\ny = [1, 5, 3]\n\n\nNow let’s visualize it\n\nplt.bar(x, y)\nplt.show()"
   },
   {
-    "objectID": "posts/001_DOW1_Weather/DOW1.html",
-    "href": "posts/001_DOW1_Weather/DOW1.html",
+    "objectID": "posts/001_DOW1_Weather/DOW1.html#was-november-2018-unusually-cold-overall",
+    "href": "posts/001_DOW1_Weather/DOW1.html#was-november-2018-unusually-cold-overall",
     "title": "Dataset of the Week #1: The Weather in Philadelphia",
-    "section": "",
-    "text": "My post\n\nimport pandas as pd\n\n\nweather_df = pd.read_csv('data/philadelphia_weather_2005_to_2025.csv')\n\n\nweather_df.head()\n\n\n\n\n\n\n\n\nday\nyear\nhigh\nlow\nrain\nsnow\ndate\nday_num\nmonth_num\ndow\ndow_name\nmonth\n\n\n\n\n0\nJanuary 1\n2005\n64\n39\n0.00\n0.0\n2005-01-01\n1\n1\n5\nSaturday\nJanuary\n\n\n1\nJanuary 2\n2005\n47\n33\n0.01\n0.0\n2005-01-02\n2\n1\n6\nSunday\nJanuary\n\n\n2\nJanuary 3\n2005\n57\n40\n0.06\n0.0\n2005-01-03\n3\n1\n0\nMonday\nJanuary\n\n\n3\nJanuary 4\n2005\n55\n44\n0.00\n0.0\n2005-01-04\n4\n1\n1\nTuesday\nJanuary\n\n\n4\nJanuary 5\n2005\n47\n36\n0.62\n0.0\n2005-01-05\n5\n1\n2\nWednesday\nJanuary"
+    "section": "Was November 2018 Unusually Cold Overall?",
+    "text": "Was November 2018 Unusually Cold Overall?\n\nTo determine whether this dip reflected a broader cold period rather than an anomaly, I examined average high and low temperatures across all days in November 2018\n\n\n\nThe results showed average temperatures of approximately 50°F (high) and 36°F (low). This shows that November 23rd, 2018 was significantly colder than the rest of the month, and it was an isolated weather event rather than evidence of a colder November overall\n\n\nNext, I looked for broader patterns by grouping November 23rd temperatures into five-year periods (2005–2010, 2010–2015, 2015–2020, and 2020–2025) to see if there was an upward trend in temperatures\n\n\n\n\nWhen comparing both average highs and lows across these buckets, there was no consistent upward trend. Instead, the averages fluctuate across periods"
+  },
+  {
+    "objectID": "posts/001_DOW1_Weather/DOW1.html#rainfall-and-snowfall-trends",
+    "href": "posts/001_DOW1_Weather/DOW1.html#rainfall-and-snowfall-trends",
+    "title": "Dataset of the Week #1: The Weather in Philadelphia",
+    "section": "Rainfall and Snowfall Trends",
+    "text": "Rainfall and Snowfall Trends\n\nNow I’m interested to see if average yearly rainfall or snowfall has increased over the years, as another indicator of potential climate change\n\n\n\n\nI graphed total annual rainfall and snowfall since 2005 and found that both series exhibit considerable variability from year to year\n\n\nTo smooth out short-term fluctuations, I again grouped the data into five-year periods. These plots suggest a gradual decline in both average rainfall and snowfall over the past two decades. The bucketed averages provide more consistent evidence of a downward trend than the temperature data alone\n\n\n\n\nThis graph provides more conclusive evidence that the average rainfall and snowfall has declined over the past 20 years."
   }
 ]
