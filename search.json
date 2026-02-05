@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "My Data Stories",
     "section": "",
-    "text": "Dataset of the Week #1: The Weather in Philadelphia\n\n\n\nDOW\n\nweather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nNina Lawson\n\n\n\n\n\n\n\n\n\n\n\n\nNina’s Test\n\n\n\nLLMs\n\nLearning\n\n\n\nTesting Blogging\n\n\n\n\n\nJan 24, 2026\n\n\nNina\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+    "text": "Dataset of the Week #1: The Weather in Philadelphia\n\n\n\n\n\n\n\n\nFeb 5, 2026\n\n\nNina Lawson\n\n\n\n\n\n\n\n\n\n\n\n\nNina’s Test\n\n\n\nLLMs\n\nLearning\n\n\n\nTesting Blogging\n\n\n\n\n\nJan 24, 2026\n\n\nNina\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/000_test_post/index.html",
@@ -39,13 +39,20 @@
     "href": "posts/001_DOW1_Weather/DOW1.html#was-november-2018-unusually-cold-overall",
     "title": "Dataset of the Week #1: The Weather in Philadelphia",
     "section": "Was November 2018 Unusually Cold Overall?",
-    "text": "Was November 2018 Unusually Cold Overall?\n\nTo determine whether this dip reflected a broader cold period rather than an anomaly, I examined average high and low temperatures across all days in November 2018\n\n\n\nThe results showed average temperatures of approximately 50°F (high) and 36°F (low). This shows that November 23rd, 2018 was significantly colder than the rest of the month, and it was an isolated weather event rather than evidence of a colder November overall\n\n\nNext, I looked for broader patterns by grouping November 23rd temperatures into five-year periods (2005–2010, 2010–2015, 2015–2020, and 2020–2025) to see if there was an upward trend in temperatures\n\n\n\n\nWhen comparing both average highs and lows across these buckets, there was no consistent upward trend. Instead, the averages fluctuate across periods"
+    "text": "Was November 2018 Unusually Cold Overall?\n\nTo determine whether this dip reflected a broader cold period rather than an anomaly, I examined average high and low temperatures across all days in November 2018\n\n\n\nThe results showed average temperatures of approximately 50°F (high) and 36°F (low). This shows that November 23rd, 2018 was significantly colder than the rest of the month, and it was an isolated weather event rather than evidence of a colder November overall"
+  },
+  {
+    "objectID": "posts/001_DOW1_Weather/DOW1.html#indications-of-climate-change",
+    "href": "posts/001_DOW1_Weather/DOW1.html#indications-of-climate-change",
+    "title": "Dataset of the Week #1: The Weather in Philadelphia",
+    "section": "Indications of Climate Change?",
+    "text": "Indications of Climate Change?\n\nNext, I looked for broader patterns by grouping November 23rd temperatures into five-year periods (2005–2010, 2010–2015, 2015–2020, and 2020–2025) to see if there was an upward trend in temperatures\n\n\n\n\nWhen comparing both average highs and lows across these buckets, there was no consistent upward trend. Instead, the averages fluctuate across periods"
   },
   {
     "objectID": "posts/001_DOW1_Weather/DOW1.html#rainfall-and-snowfall-trends",
     "href": "posts/001_DOW1_Weather/DOW1.html#rainfall-and-snowfall-trends",
     "title": "Dataset of the Week #1: The Weather in Philadelphia",
     "section": "Rainfall and Snowfall Trends",
-    "text": "Rainfall and Snowfall Trends\n\nNow I’m interested to see if average yearly rainfall or snowfall has increased over the years, as another indicator of potential climate change\n\n\n\n\nI graphed total annual rainfall and snowfall since 2005 and found that both series exhibit considerable variability from year to year\n\n\nTo smooth out short-term fluctuations, I again grouped the data into five-year periods. These plots suggest a gradual decline in both average rainfall and snowfall over the past two decades. The bucketed averages provide more consistent evidence of a downward trend than the temperature data alone\n\n\n\n\nThis graph provides more conclusive evidence that the average rainfall and snowfall has declined over the past 20 years."
+    "text": "Rainfall and Snowfall Trends\n\nNow I’m interested to see if average yearly rainfall or snowfall has increased over the years, as another indicator of potential climate change\n\n\n\n\nBoth series exhibit considerable variability from year to year, and it was fairly inconclusive\n\n\nTo smooth out short-term fluctuations, I again grouped the data into five-year periods. These plots suggest a gradual decline in both average rainfall and snowfall over the past two decades. The bucketed averages provide more consistent evidence of a downward trend than the temperature data alone\n\n\n\n\nThis graph provides more conclusive evidence that the average rainfall and snowfall has declined over the past 20 years."
   }
 ]
