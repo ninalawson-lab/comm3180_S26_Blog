@@ -2,7 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/002_DOW2/03_exploring_openpsych_big5.html",
+      "/posts/002_DOW2/DOW2.html",
       "/posts/001_DOW1_Weather/DOW1.html",
+      "/posts/misc./blogpost.html",
       "/posts/002_post_title/blogpost.html",
       "/posts/000_test_post/index.html"
     ]

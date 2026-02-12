@@ -6,11 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nina">
-<meta name="dcterms.date" content="2026-01-24">
-<meta name="description" content="Testing Blogging">
+<meta name="author" content="Nina Lawson">
+<meta name="dcterms.date" content="2026-02-12">
 
-<title>Nina’s Test – Nina's Blog</title>
+<title>Dataset of the Week #2: Big 5 – Nina’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -113,17 +147,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Nina’s Test</h1>
-                  <div>
-        <div class="description">
-          Testing Blogging
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">LLMs</div>
-                <div class="quarto-category">Learning</div>
-              </div>
-                  </div>
+      <h1 class="title">Dataset of the Week #2: Big 5</h1>
+                      </div>
   </div>
     
   
@@ -132,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Nina </p>
+               <p>Nina Lawson </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 24, 2026</p>
+        <p class="date">February 12, 2026</p>
       </div>
     </div>
     
@@ -158,9 +183,205 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Test for first blog</p>
+<section id="my-post" class="level2">
+<h2 class="anchored" data-anchor-id="my-post">My Post</h2>
+<p>I was very fascinated by the Big 5 scores in relation to countries. Needless to say, I spent a lot of time searching ISO codes, in order to identify the countries I was interested in investigating. I also did a lot of external research.</p>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<ul>
+<li>I am half Chinese, and half White. As such, I’ve attended family reunions and gatheringsa throughout my life on both sides. On an aggregate level, I’ve found that many of my white family members have been more open and extroverted, compared to my Chinese relatives. I’m also aware that there is a stereotype for Asian countries to be more reserved than their Western counterparts. I tested this.</li>
+</ul>
+<div id="dac0d032-06b0-4a4b-ab29-40f08539bfd7" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>asian_white <span class="op">=</span> (</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        .query(<span class="st">'country in ["CN","JP","KR","US","CA","GB"]'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">'country'</span>)[<span class="st">'E'</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>asian_white.transpose().plot(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">'bar'</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span>colors</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/asia_white.png" class="img-fluid"></p>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<ul>
+<li>I really didn’t see much of a difference between Asian (blue) and Western (red) countries, infact Korea ranked higher than any of the Western countries</li>
+</ul>
+</section>
+<section id="extroverted-countries" class="level3">
+<h3 class="anchored" data-anchor-id="extroverted-countries">Extroverted Countries</h3>
+<ul>
+<li>I decided to then search the most and least “extroverted” countries in the world… this is what I found</li>
+<li>Most Extroverted: Phillippines, El Salvador, Bahrain, Oman</li>
+<li>Least Extroverted: Singapore, Georgia, Lithuania, Russia</li>
+</ul>
+<div id="0c4dca23-b5ca-467f-9077-01f8be7de2fd" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>extrovert_countries <span class="op">=</span> (</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        .query(<span class="st">'country in ["CO","NG","PH","FI","JP","DE"]'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">'country'</span>)[<span class="st">'E'</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/extrovert.png" class="img-fluid"></p>
+</section>
+<section id="results-1" class="level3">
+<h3 class="anchored" data-anchor-id="results-1">Results</h3>
+<ul>
+<li>Clearly this wasn’t exactly what I was looking for. The “least extroverted countries” only scored mildly lower than the supposed “most extroverted countries”</li>
+</ul>
+</section>
+<section id="emotionally-stable-countries" class="level3">
+<h3 class="anchored" data-anchor-id="emotionally-stable-countries">“Emotionally Stable” Countries</h3>
+<ul>
+<li><p>Upon searching for “emotionally stable countries” on google, I instead found a Forbes article with “emotionally aware” countries, so I gave that a shot.</p></li>
+<li><p>This is what it said..</p></li>
+<li><p>Most Emotionally Aware = Phillippines, El Salvador, Bahrain, Oman</p></li>
+<li><p>Least Emotionally Aware = Singapore, Georgia, Lithuania, Russia</p></li>
+</ul>
+<div id="9dc233dc-3f32-4001-b729-f4f527960472" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>emotional_stability_countries <span class="op">=</span> (</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        .query(<span class="st">'country in ["PH","SV","BH","SG","GE","LT"]'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">'country'</span>)[<span class="st">'N'</span>]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/stability.png" class="img-fluid"></p>
+<section id="results-2" class="level4">
+<h4 class="anchored" data-anchor-id="results-2">Results</h4>
+<ul>
+<li>This data was more conclusive, with an obvious indication that emotionally aware countries (green) have lower Neuroticism (N) scores than non-emotionally aware countries (red)</li>
+</ul>
+</section>
+</section>
+<section id="most-emotional-countries" class="level3">
+<h3 class="anchored" data-anchor-id="most-emotional-countries">Most Emotional Countries</h3>
+<ul>
+<li>In the interest of exploring a bit further, I found out that Gallup condcuts a study every year on the World’s Emotional Health on 148 countries</li>
+<li>Latin Americans were among the most emotional, and former Soviet Union countires dominate the least emotional spectrum.</li>
+</ul>
+<p>Here is what the Gallup data said.. * Most Emotional Countries: Bolivia, Cambodia, Phillippines, Guetamala * Least Emotional Countries: Georgia, Ukraine, Lithuania, Mongolia</p>
+<div id="501167c7-94c7-4f51-9cb2-00c7063edccd" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>emotional_countries <span class="op">=</span> (</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        .query(<span class="st">'country in ["BO","PH","GT","LT","UA","GE"]'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">'country'</span>)[<span class="st">'N'</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/emotional.png" class="img-fluid"></p>
+<section id="results-3" class="level4">
+<h4 class="anchored" data-anchor-id="results-3">Results</h4>
+<ul>
+<li>I was a bit confused by this, and continued to have inconclusive results. For example, Lithuania was thought to be one of the least emotional countries, yet ranked very high in Neuroticism.</li>
+<li>I wanted to be clear, so I sorted which countries actually ranked the lowest in emotional stability- out of curiosity.</li>
+</ul>
+<div id="e2bff988-43e2-4430-8bb0-6a86fb56f9d9" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>big5_scored_df.groupby(<span class="st">'country'</span>)[<span class="st">'N'</span>].mean().sort_values().head(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/n_least.png" class="img-fluid"></p>
+<div id="8eb14072-2c2a-48df-a4e6-ed7de5f92654" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>big5_scored_df.groupby(<span class="st">'country'</span>)[<span class="st">'N'</span>].mean().sort_values(ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/n_most.png" class="img-fluid"></p>
+</section>
+<section id="results-4" class="level4">
+<h4 class="anchored" data-anchor-id="results-4">Results</h4>
+<ul>
+<li>The countries with the lowest N score were: Angola, Cape Verde, Ethiopia, Guam, and Syria</li>
+<li>The countries with thee highest N score were: Guadeoupe, Antigua and Barbuda, Grenada, Suriname, and Bhutan</li>
+</ul>
+</section>
+</section>
+<section id="extraversion-and-agreeableness" class="level3">
+<h3 class="anchored" data-anchor-id="extraversion-and-agreeableness">Extraversion and Agreeableness</h3>
+<ul>
+<li>Lastly, I was interested in the intersectionality between Extraversion and Agreeableness, and they are thought to be mildly correlated.</li>
+<li>I first sorted the countries with highest extravertedness</li>
+<li>Then I graphed those countries in terms of E and A</li>
+</ul>
+<div id="6f331b34-cd1f-4b2c-b492-f54d0ab0f8dc" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>big5_scored_df.groupby(<span class="st">'country'</span>)[<span class="st">'E'</span>].mean().sort_values(ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/e_most.png" class="img-fluid"></p>
+</section>
+<section id="results-5" class="level3">
+<h3 class="anchored" data-anchor-id="results-5">Results</h3>
+<ul>
+<li>Antigua and Barbuda, Cape Verde, Grenada, Tanzania, Angola were found as the countries with highest “E”</li>
+<li>I graphed these results along with Agreeableness</li>
+</ul>
+<div id="e027e91e-d57e-4f2a-a925-40ceeed35cc3" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>e_and_o <span class="op">=</span> (</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        .query(<span class="st">'country in ["AG","CV","GD","TZ","AO"]'</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">'country'</span>)[[<span class="st">'E'</span>,<span class="st">'O'</span>]]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        .<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/e_o.png" class="img-fluid"></p>
+<section id="next-steps" class="level4">
+<h4 class="anchored" data-anchor-id="next-steps">Next Steps</h4>
+<ul>
+<li><p>The last thing I wanted to do was pick out the 5 “happiest” countries and 5 “unhappiest” countries, and see how they stack up with all of the variables of OCEAN</p></li>
+<li><p>I wanted to stick the US in there as well</p></li>
+<li><p>According to google search…</p></li>
+<li><p>Happiest Countries: Finland, Denmark, Iceland, Sweden, Israel</p></li>
+<li><p>Unhappiest Countries: Afghanistan, Lebanon, Sierra Leone, Congo, Zimbabwe</p></li>
+</ul>
+</section>
+<section id="happiest-countries-usa" class="level4">
+<h4 class="anchored" data-anchor-id="happiest-countries-usa">Happiest Countries + USA</h4>
+<div id="6dfccf24-1067-4a16-9738-c0ab61fa5c69" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>happiest <span class="op">=</span> (</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df.query(<span class="st">'country in ["US","FI","DK","IS","SE","IL"]'</span>).</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        groupby(<span class="st">'country'</span>)[[<span class="st">'O'</span>,<span class="st">'C'</span>,<span class="st">'E'</span>,<span class="st">'A'</span>,<span class="st">'N'</span>]].</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        agg(<span class="st">'mean'</span>).</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">round</span>(<span class="dv">1</span>).</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        transpose().</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        plot(kind<span class="op">=</span><span class="st">'barh'</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/idek.png" class="img-fluid"></p>
+</section>
+<section id="unhappiest-countries-usa" class="level4">
+<h4 class="anchored" data-anchor-id="unhappiest-countries-usa">Unhappiest Countries + USA</h4>
+<div id="493561d8-78fd-4121-ab33-3c448c909151" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>unhappiest <span class="op">=</span> (</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df.query(<span class="st">'country in ["US","LB","BW","CO","ZM","ZW"]'</span>).</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        groupby(<span class="st">'country'</span>)[[<span class="st">'O'</span>,<span class="st">'C'</span>,<span class="st">'E'</span>,<span class="st">'A'</span>,<span class="st">'N'</span>]].</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        agg(<span class="st">'mean'</span>).</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">round</span>(<span class="dv">1</span>).</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        transpose().</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        plot(kind<span class="op">=</span><span class="st">'barh'</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="data/idekk.png" class="img-fluid"></p>
+<p>Note: Afghanistan and Sierra Leone did not have data so I substituted Zimbabwe and Botswana</p>
+</section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<ul>
+<li>At a country level, happiness appears to be more strongly associated with emotional stability (low N) than with being extroverted</li>
+<li>Extraversion, agreeableness, and conscientiousness (not as cleanly) do NOT predict happiness</li>
+<li>There is slightly higher Openness in happier countries</li>
+<li>Neuroticism seems to be key, across the board</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
