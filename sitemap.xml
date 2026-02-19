@@ -2,38 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/about.html</loc>
-    <lastmod>2026-02-19T04:15:48.179Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2026-02-19T04:15:48.180Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/003_DOW3/workbook.html</loc>
-    <lastmod>2026-02-19T04:15:48.279Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_DOW2/03_exploring_openpsych_big5.html</loc>
-    <lastmod>2026-02-19T04:15:48.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/index.html</loc>
-    <lastmod>2026-02-19T04:15:48.179Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_DOW2/DOW2.html</loc>
-    <lastmod>2026-02-19T04:15:48.188Z</lastmod>
+    <lastmod>2026-02-19T04:19:37.442Z</lastmod>
   </url>
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/003_DOW3/DOW3.html</loc>
-    <lastmod>2026-02-19T04:15:48.201Z</lastmod>
+    <lastmod>2026-02-19T04:19:37.462Z</lastmod>
   </url>
   <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/misc./blogpost.html</loc>
-    <lastmod>2026-02-19T04:15:48.279Z</lastmod>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/index.html</loc>
+    <lastmod>2026-02-19T04:19:37.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_DOW2/DOW2.html</loc>
+    <lastmod>2026-02-19T04:19:37.450Z</lastmod>
   </url>
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/001_DOW1_Weather/DOW1.html</loc>
-    <lastmod>2026-02-19T04:15:48.180Z</lastmod>
+    <lastmod>2026-02-19T04:19:37.442Z</lastmod>
   </url>
 </urlset>
