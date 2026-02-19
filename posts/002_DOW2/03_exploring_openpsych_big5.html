@@ -1597,7 +1597,7 @@ Name: E, dtype: float64</code></pre>
 <li>happiest countries: finland, denmark, iceland, sweden, israel</li>
 <li>unhappiest countries: afghanistan, lebanon, sierra leone, congo, zimbabwe</li>
 </ul>
-<div id="f7abda69-4818-47c2-89ff-a15c2a06772d" class="cell" data-execution_count="119">
+<div id="f7abda69-4818-47c2-89ff-a15c2a06772d" class="cell" data-execution_count="61">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>happiest <span class="op">=</span> (</span>
 <span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>    big5_scored_df.query(<span class="st">'country in ["US","FI","DK","IS","SE","IL"]'</span>).</span>
 <span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>        groupby(<span class="st">'country'</span>)[[<span class="st">'O'</span>,<span class="st">'C'</span>,<span class="st">'E'</span>,<span class="st">'A'</span>,<span class="st">'N'</span>]].</span>
