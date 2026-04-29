@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/about.html</loc>
-    <lastmod>2026-03-19T00:01:32.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/005_DOW5/DOW5.html</loc>
-    <lastmod>2026-03-19T00:01:32.677Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_DOW2/DOW2.html</loc>
-    <lastmod>2026-03-19T00:01:32.584Z</lastmod>
-  </url>
-  <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/index.html</loc>
-    <lastmod>2026-03-19T00:01:32.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/004_DOW4/DOW4.html</loc>
-    <lastmod>2026-03-19T00:01:32.675Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/003_DOW3/DOW3.html</loc>
-    <lastmod>2026-03-19T00:01:32.597Z</lastmod>
+    <lastmod>2026-04-29T20:12:12.524Z</lastmod>
   </url>
   <url>
     <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/001_DOW1_Weather/DOW1.html</loc>
-    <lastmod>2026-03-19T00:01:32.577Z</lastmod>
+    <lastmod>2026-04-29T20:12:12.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/006_DOW6/DOW6.html</loc>
+    <lastmod>2026-04-29T20:12:12.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/004_DOW4/DOW4.html</loc>
+    <lastmod>2026-04-29T20:12:12.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/003_DOW3/DOW3.html</loc>
+    <lastmod>2026-04-29T20:12:12.542Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/005_DOW5/DOW5.html</loc>
+    <lastmod>2026-04-29T20:12:12.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/posts/002_DOW2/DOW2.html</loc>
+    <lastmod>2026-04-29T20:12:12.531Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ninalawson-lab.github.io/comm3180_S26_Blog/about.html</loc>
+    <lastmod>2026-04-29T20:12:12.524Z</lastmod>
   </url>
 </urlset>
